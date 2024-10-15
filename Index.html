@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birmingham Institute Mardan</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1a237e, #0d47a1);
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        nav a:hover {
+            transform: scale(1.1);
+        }
+        section {
+            padding: 40px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            background: #fff;
+            max-width: 800px;
+            transform: perspective(1000px);
+        }
+        h2 {
+            text-align: center;
+            color: #e66465;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 150px;
+            height: 100px;
+            margin: 5px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background: #e66465;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #d15b5e;
+        }
+        .comment-section {
+            margin-top: 20px;
+        }
+        .comment {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Birmingham Institute Mardan</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#admission">Admission</a>
+        <a href="#studentID">Student ID</a>
+        <a href="#achievements">Achievements</a>
+    </nav>
+</header>
+
+<main>
+    <section id="home">
+        <h2>Welcome to Birmingham Institute Mardan</h2>
+        <p>Your journey to mastering English starts here! Explore our offerings and become a part of our vibrant learning community.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Birmingham Institute Mardan, we are dedicated to providing an exceptional English learning experience tailored to students of all levels. Our expert team of instructors is committed to fostering a supportive and engaging environment where students can thrive.</p>
+        
+        <h3>Our English Teachers:</h3>
+        <ul>
+            <li><strong>Syed Muhammad Saad Ali Shah</strong> - An expert in Spoken English with over a decade of experience, he focuses on real-world conversation skills and confidence-building.</li>
+            <li><strong>Ma'am Jamila Qayyum</strong> - As our Principal and Grammar Expert, she has a knack for simplifying complex concepts, making grammar accessible and enjoyable for all students.</li>
+            <li><strong>Sir Saood Shah</strong> - A specialist in Phonology, he uses innovative techniques to enhance pronunciation and listening skills among learners.</li>
+            <li><strong>Sir Iqbal Hassan</strong> - Our friendly receptionist and tenses expert, he provides a welcoming atmosphere for all students, ensuring they feel at home.</li>
+            <li><strong>Ma'am Nazakat</strong> - With an M.Phil in Mathematics, she brings a unique analytical approach to language learning, integrating logical thinking into her teaching.</li>
+            <li><strong>Sir Khizar</strong> - A passionate educator known for his engaging teaching style, he inspires students to explore the depths of English literature and expression.</li>
+            <li><strong>Sir Khizran</strong> - A dynamic instructor specializing in communication skills, he helps students articulate their thoughts effectively in both spoken and written English.</li>
+            <li><strong>Sir Ahmed Khan</strong> - A dedicated educator with a focus on conversational English and student engagement, helping learners gain confidence in speaking.</li>
+        </ul>
+        
+        <div class="comment-section">
+            <h3>Comments and Experiences</h3>
+            <form id="commentForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <textarea name="comment" placeholder="Share your experience..." required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="commentsDisplay"></div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>We offer a variety of activities designed to enhance your English language skills:</p>
+        <ul>
+            <li>Spoken English Classes</li>
+            <li>Grammar Workshops</li>
+            <li>Phonology and Pronunciation Sessions</li>
+            <li>Personalized Learning Plans</li>
+            <li>Mock Interviews and Public Speaking Practice</li>
+            <li>IELTS Preparation Courses</li>
+            <li>TOEFL Preparation Courses</li>
+            <li>Oxford English Courses</li>
+        </ul>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <p>We take pride in the accomplishments of our students and faculty:</p>
+        <ul>
+            <li>Over 500 students successfully passed the IELTS exam with high scores.</li>
+            <li>Recognition for excellence in teaching from local educational boards.</li>
+            <li>Successful placement of students in prestigious universities abroad.</li>
+            <li>Development of innovative teaching methods that have been adopted by other institutions.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone/WhatsApp: <strong>+92 313 9011401</strong></p>
+        <p>Email: <a href="mailto:Birminghaminstitutemardan@gmail.com">Birminghaminstitutemardan@gmail.com</a></p>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Explore our moments captured in photos!</p>
+        <div class="gallery">
+            <img src="photo1.jpg" alt="Gallery Image 1">
+            <img src="photo2.jpg" alt="Gallery Image 2">
+            <img src="photo3.jpg" alt="Gallery Image 3">
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <section id="admission">
+        <h2>Admission Form</h2>
+        <form id="admissionForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="fatherName" placeholder="Father's Name" required>
+            <input type="tel" name="phoneNumber" placeholder="Phone Number" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="accommodations" placeholder="Accommodations">
+            <input type="text" name="nationality" placeholder="Nationality" required>
+            <input type="text" name="englishLevel" placeholder="English Language Level" required>
+            <input type="tel" name="whatsapp" placeholder="WhatsApp Number" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="studentID">
+        <h2>Student ID Management</h2>
+        <form id="studentIDForm
